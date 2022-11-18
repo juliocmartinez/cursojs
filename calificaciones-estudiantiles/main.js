@@ -31,3 +31,32 @@ aprobados.innerHTML= textA
 desaprobados.innerHTML=textD
 
 console.log(`Los estudiantes que aprobaron fueron: ${contador}`)
+
+
+
+
+
+// class Calificacion{
+//   constructor(nombre, nota){
+//     this.nombre=nombre;
+//     this.nota = nota;
+//   }
+//   toString(){
+//     return `(${this.nombre},${this.nota} )`
+//   }
+  
+// }
+
+// let nota1  = new Calificacion("Julio", 4.3)
+// let nota2  = new Calificacion("Karen", 3.2)
+// let nota3  = new Calificacion("Andy", 4.8)
+// let nota4  = new Calificacion("Carmelo", 2.3)
+
+
+// let calificaciones =[nota1, nota2, nota3, nota4]
+// console.log("Aprobados")
+// calificaciones.find((algo)=>{
+//  if(algo.nota>3){
+//    co
+nsole.log(`${algo.nombre}: ${algo.nota}`)
+//     }
