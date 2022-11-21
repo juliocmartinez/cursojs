@@ -17,7 +17,10 @@ window.addEventListener('load', () => {
 
     })
 
-
+    boton.addEventListener('click', function(){
+        this.style.border="10px solid black"
+    
+    })
     boton.addEventListener('mouseover', () => {
         boton.style.background = "#ccc"
     })
