@@ -15,7 +15,7 @@
     <script src="./js/interfaces.js"></script>
     <title>Interfaces</title>
     <style>
-        .elemento{
+        .elemento {
             width: 300px;
             height: 200px;
             border: 4px solid black;
@@ -24,7 +24,8 @@
             float: left;
 
         }
-        .listaSelected li{
+
+        .listaSelected li {
             width: 80%;
             padding: 20px;
             border: 1px solid #ccc;
@@ -32,22 +33,36 @@
             cursor: pointer;
         }
 
-        ul .ui-selecting{
+        ul .ui-selecting {
             background: green;
         }
-        ul .ui-selected{
+
+        ul .ui-selected {
             background: blue;
         }
-        #elemento-movido{
+
+        #elemento-movido {
             width: 100px;
             height: 100px;
             border: 4px solid red;
 
         }
-        #area{
+
+        #area {
             width: 300px;
             height: 300px;
             border: 4px solid green;
+
+        }
+
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: pink;
+            margin: 20px;
+            float: none;
+            display: none;
 
         }
     </style>
@@ -55,6 +70,44 @@
 
 <body>
     <h1>jQuery UI</h1>
+    <hr>
+    <h3>Tooltip</h3>
+    <a href="#" id="mis-datos" title="Acceder a las seccion de mis datos de esta web">Mis datos</a>
+    <a href="#" id="my-dates" title="Acceder a la seccion de my dates">My dates</a>
+    <hr>
+
+    <h1>Cuadros de dialogo</h1>
+    <button id="lanzar-popup">Lanzame</button>
+    <div id="popup" title="¿Estás seguro?">
+        <p>Si continuas en el curso aprenderas mucho de javascript</p>
+    </div>
+    <hr>
+    <hr>
+
+    <h1>Calendario</h1>
+    <input type="text" name="" id="calendario">
+    <hr>
+    <h1>Pestañas</h1>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+
+        </ul>
+        <div id="tabs-1">
+            Hola soy la primera pestaña
+        </div>
+        <div id="tabs-2">
+            Hola soy la segunda pestaña
+        </div>
+        <div id="tabs-3">
+            Hola soy la tercera pestaña
+        </div>
+    </div>
+    <hr>
+    <button id="mostrar">mostrar</button>
+    <div id="caja-efectos" class="caja-efectos elemento"></div>
     <div id="elemento-movido"></div><br>
     <div id="area">
 

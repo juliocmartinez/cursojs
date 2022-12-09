@@ -17,4 +17,26 @@ $(document).ready( function () {
 
     })
 
+    $("#mostrar").click(function(){
+        $(".caja-efectos").toggle("shake", 5000)
+    })
+
+    //Tooltip
+    $(document).tooltip()
+
+    //Dialog
+$("#lanzar-popup").click(()=>{
+    $("#popup").dialog()
+})
+
+
+//Datepicker
+$("#calendario").datepicker()
+
+//Tabs
+$("#pestanas").tabs()
+
+
+   
+
 })  
