@@ -1,0 +1,7 @@
+<h1>Componente de Peliculas</h1>
+<button type="button" 
+(click)="sayMessage()">Trigger alert massage</button>
+<p>{{descripcion}}</p>
+<ul>
+    <li *ngFor="let movie of peliculas">{{movie.nombre}} - {{movie.filma}}</li>
+</ul>
