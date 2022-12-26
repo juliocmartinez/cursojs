@@ -1,0 +1,7 @@
+<h2>Peticiones ajax</h2>
+<input type="text" [(ngModel)]="userId" (keyup.enter)="cargarUsuario()">
+<div *ngIf="user">
+    <img src="{{user.avatar}}" alt="">
+    <h3>{{user.first_name}} - {{user.last_name}}</h3>
+
+</div>

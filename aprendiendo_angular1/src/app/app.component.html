@@ -6,18 +6,21 @@
   <h1>Bienvenido al {{title}}</h1>
   <p>{{descripcion}}</p>
 <nav>
-  <a [routerLink]="['/']">Home</a>
+  <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a>
   &nbsp;
-  <a [routerLink]="['/zapatillas']">Zapatillas</a>
+  <a [routerLink]="['/zapatillas']" [routerLinkActive]="['active']">Zapatillas</a>
   &nbsp;
-  <a [routerLink]="['/cursos']">Cursos</a>
+  <a [routerLink]="['/cursos']" [routerLinkActive]="['active']">Cursos</a>
   &nbsp;
-  <a [routerLink]="['/videojuego']">Videojuegos</a>
+  <a [routerLink]="['/videojuego']" [routerLinkActive]="['active']">Videojuegos</a>
   &nbsp;
-  <a [routerLink]="['/peliculas']">Peliculas</a>
+  <a [routerLink]="['/peliculas']" [routerLinkActive]="['active']">Peliculas</a>
+  &nbsp;
+  <a [routerLink]="['/externo']" [routerLinkActive]="['active']">Externo</a>
 
 
 </nav>
+<hr>
 <!-- <button (click)="ocultarVideojuegos()">Ocultar</button> -->
 
   <!-- <videojuego *ngIf="mostrar_videojuegos"></videojuego> -->
