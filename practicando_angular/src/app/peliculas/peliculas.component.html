@@ -1,0 +1,5 @@
+<h2>Componente de peliculas</h2>
+<input type="text"  [(ngModel)]="nombre_peli" (keyup.enter)="addNombrePeli()">
+<ul *ngFor="let pelicula of pelisNoRepeat">
+   <li *ngIf="pelicula">{{pelicula}}</li> 
+</ul>

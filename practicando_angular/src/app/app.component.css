@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+}
+li {
+    margin: 10px;
+    list-style:none;
+}
+li a{
+    text-decoration: none;
+
+}
