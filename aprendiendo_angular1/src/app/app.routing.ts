@@ -10,6 +10,7 @@ import { CursosComponent } from "./cursos/cursos.component";
 import { PeliculasComponente } from "./peliculas/peliculas.component";
 import { ExternoComponent } from "./externo/externo.component";
 import { ContactoComponent } from "./contacto/contacto.component";
+import { OnchangeComponent } from "./onchange/onchange.component";
 //Array de rutas
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
     { path: 'cursos/:nombre/:followers', component: CursosComponent },
     { path: 'peliculas', component: PeliculasComponente },
     { path: 'externo', component:ExternoComponent},
-    { path: 'contacto', component: ContactoComponent },
+    { path: 'onchange', component: OnchangeComponent },
     { path: '**', component: HomeComponent }
 ];
 

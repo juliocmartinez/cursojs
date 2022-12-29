@@ -12,8 +12,8 @@ const appRoutes: Routes = [
     { path: 'proyectos', component: ProjectsComponent },
     { path: 'crear-proyecto', component: CreateComponent },
     { path: 'contacto', component: ContactComponent },
-    {path:'**', component: ErrorComponent}
+    { path: '**', component: ErrorComponent }
 ]
 
-export const appRoutingProviders:any[] = []
-export const routing: ModuleWithProviders <any>= RouterModule.forRoot(appRoutes)
+export const appRoutingProviders: any[] = []
+export const routing: ModuleWithProviders<any> = RouterModule.forRoot(appRoutes)
