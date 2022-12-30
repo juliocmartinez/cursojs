@@ -3,6 +3,13 @@
     <!--Con ngSubmit recogo lo que el formulario reciba
     ngForm nos permite transformar el form html a form de angular
     -->
+    <div class="message success" *ngIf="status=='success'">
+        EL proyecto se ha creado correctamente, puedes <a href="#">verlo aquí</a>
+    </div>
+    <div class="message failed"  *ngIf="status=='failed'" >
+        EL proyecto no se ha podido crear
+    </div>
+    
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
         <p>
             <label for="name">Nombre</label>
@@ -14,7 +21,8 @@
         <p>
             <label for="descripcion">Descripcion</label>
             <textarea name="descripcion" #descripcion="ngModel" [(ngModel)]="project.descripcion" required></textarea>
-            <span class="form_error" *ngIf="descripcion.touched && !descripcion.valid">La descripcion es obligatorio</span>
+            <span class="form_error" *ngIf="descripcion.touched && !descripcion.valid">La descripcion es
+                obligatorio</span>
         </p>
         <p>
             <label for="category">Categoria</label>
@@ -33,7 +41,7 @@
         </p>
         <p>
             <label for="image">Imagen</label>
-            <input type="file" name="image" placeholder="Subir imagen" #image="ngModel" [(ngModel)]="project.image">
+            <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" >
         </p>
         <input type="submit" value="Enviar" [disabled]="!projectForm.valid">
     </form>
