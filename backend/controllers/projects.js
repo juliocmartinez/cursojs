@@ -32,10 +32,12 @@ let controller = {
             return res.status(200).send({ project: projectStored })
         })
 
-        return res.status(200).send({
-            project: project,
-            message: 'Metodo saveProject'
-        })
+        //Mostrar dos veces una solicitud me produjo un error de cabeceras, esto porque se cumple la conficion del 
+        //metodo project.save() de guardar y tambien retorno un estado 200 con un mensaje "METODO saveProject"
+        // return res.status(200).send({
+        //     project: project,
+        //     message: 'Metodo saveProject'
+        // })
 
     },
 
