@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container" *ngIf="project">
     <h2>{{title}}</h2>
     <!--Con ngSubmit recogo lo que el formulario reciba
     ngForm nos permite transformar el form html a form de angular
     -->
     <div class="message success" *ngIf="status=='success'">
-        EL proyecto se ha creado correctamente, puedes <a href="#">verlo aquí</a>
+        EL proyecto se ha creado correctamente, puedes <a [routerLink]="['/proyecto', save_project['_id']]">verlo aquí</a>
     </div>
     <div class="message failed"  *ngIf="status=='failed'" >
         EL proyecto no se ha podido crear
@@ -40,8 +40,12 @@
             <span class="form_error" *ngIf="langs.touched && !langs.valid">Los lenguajes son obligatorio</span>
         </p>
         <p>
-            <label for="image">Imagen</label>
+            <label for="image">Imagen del proyecto</label>
+            <span *ngIf="project.image" style="float: none;">
+                <img src="{{url+'get-image/'+project.image}}" alt="" style="width: 100px;">
+            </span>
             <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" >
+
         </p>
         <input type="submit" value="Enviar" [disabled]="!projectForm.valid">
     </form>
