@@ -10,6 +10,7 @@ export class SliderComponent implements OnInit {
   @Input() anchura: number
   @Input('etiqueta') captions: boolean
   @Input('auto') autoCarrusel: boolean
+/* Creating a new event emitter. */
   @Output() conseguirAutor = new EventEmitter()
   public autor: any
   constructor() {
@@ -27,6 +28,7 @@ export class SliderComponent implements OnInit {
 
     });
 
+    /* A jQuery plugin that is being called. */
     $('.bxslider').bxSlider({
       mode: 'fade',
       auto: this.autoCarrusel,

@@ -9,6 +9,7 @@ import { ErrorComponent } from "./components/error/error.component";
 import { DetailComponent } from "./components/detail/detail.component";
 import { EditComponent } from "./components/edit/edit.component";
 import { SliderComponent } from "./components/slider/slider.component";
+/* Defining the routes for the application. */
 const appRoutes: Routes = [
     { path: 'home', component: AboutComponent },
     { path: 'sobre-mi', component: AboutComponent },

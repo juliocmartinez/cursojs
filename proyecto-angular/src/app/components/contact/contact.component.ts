@@ -23,10 +23,13 @@ export class ContactComponent implements OnInit {
   }
   ngOnInit(){
     // alert(document.querySelector('#texto')?.innerHTML)
-    console.log(this.textos.nativeElement.textContent);
+    // console.log(this.textos.nativeElement.textContent);
 
     
   }
+ /**
+  * It sets the width of the slider to the width of the screen.
+  */
   cargarSlider(){
     this.anchuraToSlider = this.widthSlider
 

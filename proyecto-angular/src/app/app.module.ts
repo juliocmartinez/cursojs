@@ -15,7 +15,9 @@ import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { EditComponent } from './components/edit/edit.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ResaltadoDirective } from './resaltado.directive';
 @NgModule({
+ /* Declaring all the components that are going to be used in the app. */
   declarations: [
     AppComponent,
     AboutComponent,
@@ -25,8 +27,10 @@ import { SliderComponent } from './components/slider/slider.component';
     ErrorComponent,
     DetailComponent,
     EditComponent,
-    SliderComponent
+    SliderComponent,
+    ResaltadoDirective
   ],
+  /* The above code is importing the HttpClientModule and FormsModule. */
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,6 +39,7 @@ import { SliderComponent } from './components/slider/slider.component';
     HttpClientModule,
     FormsModule
   ],
+  /* Telling the Angular2 framework to use the appRoutingProviders to handle the routing. */
   providers: [
     appRoutingProviders
   ],
