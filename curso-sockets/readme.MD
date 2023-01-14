@@ -8,7 +8,4 @@ Pasos para crear la aplicacion
 7. Conexion al socket
 8. Indicamos a Express que use la carpeta Client como una carpeta estática. (donde se mostrará el proyecto)
 9. Creamos la vista del cliente (index.html) y el main.js
-
-
-Siguiente clase 281 mensajes en el chat 
-13/01/2023 15:59
+10. Crea
