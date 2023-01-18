@@ -2,22 +2,17 @@
 let express = require('express')
 let app = express()
 let http = require('http')
-const server = http.createServer(app)
-// let server = require('http').Server(app)
+let server = require('http').Server(app)
 
-// let io =require('socket.io')(server,{
-//     cors: {
-//     origin: '*',
-//     }
+let io =require('socket.io')(server,{
+    cors: {
+    origin: '*',
+    }
+});
+
+// app.configure(function(){
+// 	app.use(express.static(__dirname + '/static'));
 // });
-
-const {Server} = require('socket.io')
-const io= new Server(server, {
-         cors: {
-         origin: "*"
-         }
-     })
-
 
 /* Telling express to use the public folder as a static folder. */
 app.use(express.static('client'))
